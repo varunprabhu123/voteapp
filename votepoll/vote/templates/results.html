@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card">
+    <div class="card-header">
+<h2>Results</h2>
+    </div>
+    <div class="card-body">
+    {% for c,color in candidates_with_color %}
+
+        <strong>Candidate Name: </strong>{{ c.candidate_name }}</td><br>
+        <strong>Party Name: </strong>{{ c.party_name }}</td>
+    
+        <div class="progress">
+            <div class="progress-bar {{color}}" style="width:{{ c.vote }}%"> {{ c.vote }}</div>  
+        </div>
+        
+    {% endfor %}
+</div>
+<div class="card-footer">
+<a href="{%url 'logout' %}" class="btn btn-outline-danger">logOut</a>
+</div>
+</div>
+{% endblock %}

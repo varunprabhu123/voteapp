@@ -1,0 +1,42 @@
+[
+    {
+        "model": "vote.VotePoll",
+        "fields": {
+            "candidate_name": "M. K. Stalin",
+            "party_name": "Dravida Munnetra Kazhagam (DMK)",
+            "vote": 12
+        }
+    },
+    {
+        "model": "vote.VotePoll",
+        "fields": {
+            "candidate_name": "K. Annamalai",
+            "party_name": "Bharatiya Janata Party (BJP)",
+            "vote": 15
+        }
+    },
+    {
+        "model": "vote.VotePoll",
+        "fields": {
+            "candidate_name": "Edappadi K. Palaniswami",
+            "party_name": "All India Anna Dravida Munnetra Kazhagam (AIADMK)",
+            "vote": 11
+        }
+    },
+    {
+        "model": "vote.VotePoll",
+        "fields": {
+            "candidate_name": "Seeman",
+            "party_name": "Naam Tamilar Katchi (NTK)",
+            "vote": 20
+        }
+    },
+    {
+        "model": "vote.VotePoll",
+        "fields": {
+            "candidate_name": "Kamal Haasan",
+            "party_name": "Makkal Needhi Maiam (MNM)",
+            "vote": 25
+        }
+    }
+]

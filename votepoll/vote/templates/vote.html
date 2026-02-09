@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card">
+    <div class="card-header">
+        <h2>Vote for Your Candidate</h2>
+    </div>
+    <div class="card-body">
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-outline-primary">Submit Vote</button>
+</form>
+</div>
+<div class="card-footer">
+<a href="{%url 'logout' %}" class="btn btn-outline-danger">logOut</a>
+</div>
+</div>
+{% endblock %}
